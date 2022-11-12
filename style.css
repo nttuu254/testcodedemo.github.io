@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+:root {
+    --pink-color: #292222;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body,html {
+    background-image: url(https://scontent.fsgn5-6.fna.fbcdn.net/v/t1.15752-9/309506079_2060730990784561_5065095233033615875_n.png?_nc_cat=108&ccb=1-7&_nc_sid=ae9488&_nc_ohc=gzukjQtPwpEAX--_zNs&_nc_ht=scontent.fsgn5-6.fna&oh=03_AdTkNbpt07YEo9eJ4cPZYbVPF40ywJbDedgw9_FsHPt5UA&oe=6391CBFC);
+    background-size:100%;
+    height: 100%;
+    margin:auto;
+    font: 400 0px/1.8 "Lato", sans-serif;
+    justify-content: center;
+    display: flex;
+}
+
+
+
+.card {
+    width: 300px;
+    height: 400px;
+    border-radius: 10px;
+    text-align: center;
+    background: linear-gradient(10deg, #5f5555, #352a2a);
+    overflow: hidden;
+    margin: 20px 30px;
+    
+}
+
+.card__img {
+    width: 120px;
+    height: 120px;
+    overflow: hidden;
+    transition: 0.25s;
+    margin: 0 auto;
+    transform: translateY(25px);
+    border-radius: 50%;
+    border: 4px solid var(--pink-color);
+    cursor: pointer;
+    filter: grayscale(50%);
+    transition: 300ms;
+}
+
+.card__img:hover {
+    width: 100%;
+    height: 100%;
+    border-radius: unset;
+    border: unset;
+    transform: unset;
+    filter: grayscale(0)
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+h2 {
+    color: white;
+    margin-top: 40px;
+    font-size: 20px;
+    
+}
+
+
+p {
+    font-size: 18px;
+  font-weight: 80;
+  margin-top: 10px;
+  letter-spacing: 3px;
+    color:#ffffff ;
+}
+
+.card__social a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    margin: 25px 20px 40px;
+    display: inline-block;
+    font-size: 25px;
+    transition: 0.25s;
+}
+
+.card__social a:hover {
+    color: var(--pink-color);
+    
+}
+
+.container {
+  
+    margin: 10px 20px;
+    color: rgb(255, 255, 255);
+  
+  }
+  
+  .heading {
+    font-size: 60px;
+    color: #00fff2
+    
+    
+  }
+  
+  .heading span {
+    font-style: italic;
+    font-size: 30px;
+    
+    
+  }
+  
+  .profiles {
+    display: flex;
+    justify-content: space-around;
+    margin: 450px 80px;
+    
+   
+  }
+
+button {
+    outline: none;
+    border: none;
+    color: white;
+    background-color: transparent;
+    border: 1px solid var(--pink-color);
+    padding: 10px 20px;
+    border-radius: inherit;
+    cursor: pointer;
+    transition: 0.25s;
+    min-width: 100px;
+}
+
+button:hover {
+    background-color:#1a92c6 ;
+} 
+
+
+
+@media only screen and (max-width: 1500px) {
+    .heading {
+      font-size: 40px;
+      color: rgb(255, 255, 255);
+      text-align:center;
+     
+    }
+  
+    .heading span {
+      font-size: 20px;
+
+    }
+  
+  }
